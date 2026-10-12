@@ -1,0 +1,18 @@
+# ── Client intake: fill this in when the data arrives ──────────────────────────
+client_name: {{client_name}}
+contact: ""                 # who sent the data / who receives results
+received_on: {{today}}
+data_source: ""             # email / drive link / sftp ...
+expected_file_count:        # how many files the client says they sent – checked during mapping
+
+# What does the client want to evaluate? (ask them!) – decides what goes into step6_delivery
+focus:
+  transactions: true        # categorised transactions → Excel reports
+  identity: true            # name, account number, bank, account type
+  fraud: true               # fraud indicators
+  predictors: false         # credit indicators
+
+loan_type: PL               # PL or BL
+
+notes: |
+  What the client expects, deadlines, special asks...
